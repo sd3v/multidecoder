@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Encoder/Decoder</title>
+  
+  <!-- Include Select2 CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+  
+  <!-- Include CryptoJS for encryption and hashing -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Multi Encoder/Decoder</h1>
+      <div class="toggle-container">
+        <span id="decodeLabel">Decode</span>
+        <label class="switch">
+          <input type="checkbox" id="modeSwitch">
+          <span class="slider"></span>
+        </label>
+        <span id="encodeLabel">Encode</span>
+      </div>
+    </div>
+
+    <div class="select_container">
+    <label for="algorithmsSelect">Select Algorithms:</label>
+    <select id="algorithmsSelect" multiple>
+      <option value="Base64">Base64</option>
+      <option value="ROT13">ROT13</option>
+      <option value="Hex">Hexadecimal</option>
+      <option value="ASCII">ASCII</option>
+      <option value="Binary">Binary</option>
+      <option value="Octal">Octal</option>
+      <option value="HTML">HTML</option>
+      <option value="MD5">MD5</option>
+      <option value="SHA1">SHA-1</option>
+      <option value="SHA256">SHA-256</option>
+      <option value="AES">AES</option>
+      <option value="DES">DES</option>
+    </select>
+</div>
+
+    <label for="inputString">Enter String:</label>
+    <input type="text" id="inputString" placeholder="Enter your string here" />
+
+    <div id="results" class="results-grid"></div>
+  </div>
+
+  <!-- Include jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Include Select2 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+  <!-- Custom Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
