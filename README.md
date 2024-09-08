@@ -1,4 +1,5 @@
 # Multi Encoder/Decoder
+The App is also hosted here: [MultiDecoder](https://sd3v.github.io/multidecoder/)
 
 ## Overview
 This web application provides a simple and intuitive interface for encoding and decoding strings using various algorithms. The app includes support for popular algorithms like Base64, ROT13, ASCII, Hexadecimal, SHA-256, and more.
